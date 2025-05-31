@@ -1,4 +1,5 @@
 .container {
+  padding-top: 20px;
   width: 100%;
   height: 100vh;
 
@@ -6,22 +7,21 @@
   justify-content: center;
   align-items: center;
 
-  background-color: rgba(136, 136, 136, 0.89);
+  background-color: #a59ae0;
 }
 
 .layoutContent {
   padding: 2rem;
 
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
   height: 100%;
-  max-height: 900px;
-  border: #000000 2px solid;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow-y: auto;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #23272c;
 
   .contentHeader {
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,15 +46,25 @@
   background: #555;
 }
 
+.logo {
+  display: flex;
+  gap: 1rem;
+}
 
+.logoIcon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
 
 .headerTitle {
+  color: #a59ae0;
   cursor: pointer;
 }
 
 .headerButtons {
   width: 200px;
-  height: 35px;
+  height: 50px;
 
   display: flex;
   align-items: center;
@@ -65,25 +75,57 @@
 .buttonLogout {
   margin-top: 0;
 
-  border: 2px solid gray;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgb(157, 157, 157);
+  background-color: #23272c;
+  border-radius: 60px;
 
   transition: background-color 0.3s ease;
 
   &:hover {
     background-color: cornflowerblue;
+  }
+
+  .logoutLogo {
+    width: 20px;
+    height: 20px;
   }
 }
 
 .buttonProfile {
   margin-top: 0;
 
-  border: 2px solid gray;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgb(157, 157, 157);
+  background-color: #23272c;
+  border-radius: 60px;
 
   transition: background-color 0.3s ease;
 
   &:hover {
     background-color: cornflowerblue;
   }
+
+  .profileLogo {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+}
+
+.splitLine {
+  margin-top: 2rem;
+  border: 1px solid #4f4f4f;
 }
 
 .cards {

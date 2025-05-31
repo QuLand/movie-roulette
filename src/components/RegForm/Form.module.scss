@@ -12,7 +12,6 @@ body {
 
 .container {
   width: 100%;
-  background-image: url("https://pic.rutubelist.ru/video/87/0c/870cf33bbd9cb8bb596ac5c885815731.jpg");
 }
 
 .register {
@@ -63,7 +62,7 @@ label {
 .inputWrapper {
   display: flex;
   flex-direction: column;
-  gap: 8px
+  gap: 8px;
 }
 
 input {
