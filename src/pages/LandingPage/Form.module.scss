@@ -1,7 +1,6 @@
 .container {
   padding-top: 20px;
   width: 100%;
-  height: 100vh;
 
   display: flex;
   justify-content: center;
@@ -14,8 +13,7 @@
   padding: 2rem;
 
   width: 100%;
-  max-width: 1800px;
-  height: 100%;
+  max-width: 1500px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #23272c;
@@ -88,7 +86,7 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: cornflowerblue;
+    background-color: #a59ae0;
   }
 
   .logoutLogo {
@@ -113,7 +111,7 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: cornflowerblue;
+    background-color: #a59ae0;
   }
 
   .profileLogo {
@@ -128,10 +126,14 @@
   border: 1px solid #4f4f4f;
 }
 
-.cards {
-  margin-top: 10rem;
+.mainCard {
+  margin-top: 1.5rem;
 
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.filter {
+  margin-top: 3rem;
 }

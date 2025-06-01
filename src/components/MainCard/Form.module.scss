@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  gap: 3rem;
+}
+
+.cardInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.infoTitle {
+  font-size: 8em;
+}
+
+.infoDescription {
+  color: #797979;
+}
+
+.infoButtons {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.buttonFavorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50px;
+  background-color: #a59ae0;
+
+  .favoriteTitle {
+    color: black;
+    font-weight: 200;
+  }
+}
+
+.buttonTicket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(255, 207, 86);
+
+  .ticketTitle {
+    color: black;
+    font-weight: 200;
+  }
+}
+
+.buttonWatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(99, 99, 99);
+
+  .watchTitle {
+    color: #fff;
+    font-weight: 200;
+  }
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.imageCard {
+  width: 500px;
+
+  border-radius: 50px;
+}
