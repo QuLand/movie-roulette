@@ -2,8 +2,11 @@ import styles from './Form.module.scss'
 
 // @ts-ignore
 import coffeeIcon from '../../common/assets/icons/coffee.svg';
+import {useState} from "react";
+import Modal from "../../components/Modal";
 
 const LoginPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
@@ -15,12 +18,13 @@ const LoginPage = () => {
                   <p className={styles.wrapperDescription}>Enjoy the newest movies</p>
                 </div>
                 <div className={styles.control}>
-                  <button type="button" className={styles.controlButton}>
+                  <button type="button" className={styles.controlButton} onClick={() => setIsOpen(true)}>
                     <span className={styles.buttonTitle}>
                       Log in
                     </span>
                   </button>
-                  <span>No account?  <a className={styles.controlSign}>Sign up</a></span>
+                  <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}/>
+                  <span className={styles.controlTitle}>No account?  <a className={styles.controlSign}>Sign up</a></span>
                 </div>
             </div>
         </div>

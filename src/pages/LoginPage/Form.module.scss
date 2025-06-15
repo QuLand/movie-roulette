@@ -29,7 +29,12 @@
       .logoTitle {
         font-size: 1.5em;
         font-weight: 600;
+        color: #fff;
       }
+    }
+
+    .wrapperDescription {
+      color: #fff;
     }
   }
 
@@ -50,8 +55,15 @@
 
       cursor: pointer;
 
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #5200A3;
+      }
+
       .buttonTitle {
         font-size: 1.2em;
+        color: #fff;
       }
     }
 
@@ -59,6 +71,11 @@
       text-decoration: underline;
 
       cursor: pointer;
+      color: #fff;
+    }
+
+    .controlTitle {
+      color: #fff;
     }
   }
 }
