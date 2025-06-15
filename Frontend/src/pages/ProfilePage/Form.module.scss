@@ -1,0 +1,38 @@
+.container {
+  padding-top: 20px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #a59ae0;
+}
+
+.layoutContent {
+  padding: 2rem;
+
+  width: 100%;
+  max-width: 1500px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #23272c;
+
+  .contentHeader {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.buttonBack {
+  width: 100px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+}
