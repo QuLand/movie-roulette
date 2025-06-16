@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Card from "../Card";
 
-import styles from "./Form.module.scss";
+import styles from "./style.module.scss";
 
 const movies = [
   {

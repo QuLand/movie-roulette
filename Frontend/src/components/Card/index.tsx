@@ -1,4 +1,4 @@
-import styles from "./Form.module.scss";
+import styles from "./style.module.scss";
 
 type CardProps = {
   title: string;

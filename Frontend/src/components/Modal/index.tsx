@@ -1,7 +1,7 @@
 import {PropsWithChildren} from "react";
 import ReactDOM from "react-dom";
 
-import styles from './Form.module.scss'
+import styles from './style.module.scss'
 
 import GitHub from "../../common/assets/icons/icons8-github.svg"
 import Google from "../../common/assets/icons/icons8-google.svg"

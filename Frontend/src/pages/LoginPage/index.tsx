@@ -1,4 +1,4 @@
-import styles from './Form.module.scss'
+import styles from './style.module.scss'
 
 // @ts-ignore
 import coffeeIcon from '../../common/assets/icons/coffee.svg';

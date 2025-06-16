@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { MainCard } from "../../components/MainCard";
 import { Filter } from "../../components/Filter";
 
-import styles from "./Form.module.scss";
+import styles from "./style.module.scss";
 
 const cardProps = {
   title: "Берсерк",

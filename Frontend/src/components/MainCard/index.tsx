@@ -1,4 +1,4 @@
-import styles from "./Form.module.scss";
+import styles from "./style.module.scss";
 
 interface MainCardProps {
   title: string;

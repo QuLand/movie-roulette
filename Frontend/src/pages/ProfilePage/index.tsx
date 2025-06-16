@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import styles from './Form.module.scss'
+import styles from './style.module.scss'
 
 const ProfilePage = () => {
     const navigate = useNavigate();
