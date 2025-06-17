@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom'
+
 import style from "./style.module.scss";
 
 import CoffeeLogo from "../../common/assets/icons/coffee.svg";
@@ -9,8 +11,12 @@ import TrendingLogo from "../../common/assets/icons/trending-up.svg";
 import FilmLogo from "../../common/assets/icons/film.svg";
 import HeartLogo from "../../common/assets/icons/heart.svg";
 import MessageLogo from "../../common/assets/icons/message-circle.svg";
+import {useState} from "react";
+import ModalSetting from "../ModalSetting";
 
 const Navigation = () => {
+  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={style.container}>
       <div className={style.logoIcon}>
@@ -46,12 +52,13 @@ const Navigation = () => {
             Social
           </span>
         </div>
-        <div className={style.optionLogout}>
+        <div className={style.optionLogout} onClick={() => setIsOpen(true)}>
           <span className={style.optionItem}>
             <img src={SettingLogo} alt="" />
             Setting
           </span>
-          <span className={style.optionItem}>
+          <ModalSetting isOpen={isOpen} onClose={() => setIsOpen(false)} />
+          <span className={style.optionItem} onClick={() => navigate("/")}>
             <img src={LogoutLogo} alt="" />
             Logout
           </span>

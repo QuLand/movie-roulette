@@ -1,0 +1,32 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .category {
+    display: flex;
+    gap: 1rem;
+
+    .categoryTitle {
+      color: #fff;
+    }
+  }
+
+  .optionProfile {
+    display: flex;
+    gap: 1rem;
+
+    .profileIcon {
+      display: flex;
+      gap: .4rem;
+      align-items: center;
+
+      cursor: pointer;
+
+      .profileName {
+        color: #fff;
+      }
+    }
+  }
+}
