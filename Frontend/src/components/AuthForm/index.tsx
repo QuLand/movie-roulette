@@ -27,9 +27,9 @@ const AuthForm = ({ isOpen, onClose, type }: PropsWithChildren<ModalProps>) => {
         <div className={styles.modalForm}>
           <div className={styles.formField}>
             <input
-              type="email"
+              type="text"
               className={styles.fieldInput}
-              placeholder="Enter email"
+              placeholder="Enter name"
               required
             />
           </div>
@@ -54,7 +54,9 @@ const AuthForm = ({ isOpen, onClose, type }: PropsWithChildren<ModalProps>) => {
             className={styles.submitButton}
             onClick={() => navigate("/landing")}
           >
-            <span className={styles.buttonTitle}>Log in</span>
+            <span className={styles.buttonTitle}>
+              {type === "login" ? "Log in" : "Sign up"}
+            </span>
           </button>
           <div className={styles.formLinks}>
             <img src={GitHub} alt="github" className={styles.linksIcon} />
