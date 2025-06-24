@@ -8,11 +8,20 @@
   color: #fff;
   background-color: #21201e;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; // чтобы была поверх контента
+
   .logoIcon {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-size: 1.5em;
+    color: #a084e8;
+
+    cursor: pointer;
   }
 
   .optionMenu {
@@ -36,11 +45,14 @@
         align-items: center;
         gap: 0.5rem;
 
-        transition: transform 0.2s ease-in;
+        transition:
+          color 0.1s ease-in,
+          transform 0.1s ease-in;
 
         cursor: pointer;
 
         &:hover {
+          color: #a084e8;
           transform: scale(1.1);
         }
       }
