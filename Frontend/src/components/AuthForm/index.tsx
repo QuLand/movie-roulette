@@ -10,11 +10,12 @@ import Google from "../../common/assets/icons/icons8-google.svg";
 import Facebook from "../../common/assets/icons/icons8-facebook.svg";
 
 type ModalProps = {
+  type: "login" | "register";
   isOpen: boolean;
   onClose: () => void;
 };
 
-const Modal = ({ isOpen, onClose }: PropsWithChildren<ModalProps>) => {
+const AuthForm = ({ isOpen, onClose, type }: PropsWithChildren<ModalProps>) => {
   const navigate = useNavigate();
   if (!isOpen) return null;
   return ReactDOM.createPortal(
@@ -26,9 +27,10 @@ const Modal = ({ isOpen, onClose }: PropsWithChildren<ModalProps>) => {
         <div className={styles.modalForm}>
           <div className={styles.formField}>
             <input
-              type="text"
+              type="email"
               className={styles.fieldInput}
-              placeholder="Enter login"
+              placeholder="Enter email"
+              required
             />
           </div>
           <div className={styles.formField}>
@@ -36,8 +38,17 @@ const Modal = ({ isOpen, onClose }: PropsWithChildren<ModalProps>) => {
               type="password"
               className={styles.fieldInput}
               placeholder="Enter password"
+              required
             />
           </div>
+          {type === "register" && (
+            <input
+              type="password"
+              className={styles.fieldInput}
+              placeholder="Confirm password"
+              required
+            />
+          )}
           <button
             type="button"
             className={styles.submitButton}
@@ -58,4 +69,4 @@ const Modal = ({ isOpen, onClose }: PropsWithChildren<ModalProps>) => {
   );
 };
 
-export default Modal;
+export default AuthForm;

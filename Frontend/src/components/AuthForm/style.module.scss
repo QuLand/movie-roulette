@@ -19,6 +19,7 @@
 }
 
 .modalContent {
+  display: flex;
   position: relative;
   background: white;
   padding: 20px;
@@ -26,7 +27,7 @@
   z-index: 1001;
   max-width: 300px;
   width: 100%;
-  max-height: 330px;
+  max-height: 400px;
   height: 100%;
   overflow-y: hidden;
 }
@@ -40,7 +41,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 3;
-  color: #6100C2;
+  color: #6100c2;
 }
 
 .modalForm {
@@ -50,15 +51,20 @@
   flex-direction: column;
   gap: 2rem;
 
-
   .formField {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
+  .formLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
   .fieldInput {
-    padding: .3rem;
+    padding: 0.3rem;
     height: 40px;
 
     border: 1.5px solid #000;
@@ -71,15 +77,15 @@
     width: 100%;
     height: 46px;
 
-    border: 1px solid #6100C2;
-    background-color: #6100C2;
+    border: 1px solid #6100c2;
+    background-color: #6100c2;
     border-radius: 5px;
 
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: #5200A3;
+      background-color: #5200a3;
     }
 
     .buttonTitle {

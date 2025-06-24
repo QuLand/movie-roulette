@@ -1,11 +1,11 @@
-// @ts-ignore
 import coffeeIcon from "../../common/assets/icons/coffee.svg";
 import { useState } from "react";
-import Modal from "../../components/Modal";
+import AuthForm from "../../components/AuthForm";
 
 import styles from "./style.module.scss";
 const LoginPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [formType, setFormType] = useState<"login" | "register">("login");
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -20,13 +20,29 @@ const LoginPage = () => {
           <button
             type="button"
             className={styles.controlButton}
-            onClick={() => setIsOpen(true)}
+            onClick={() => {
+              setFormType("login");
+              setIsOpen(true);
+            }}
           >
             <span className={styles.buttonTitle}>Log in</span>
           </button>
-          <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+          <AuthForm
+            isOpen={isOpen}
+            onClose={() => setIsOpen(false)}
+            type={formType}
+          />
           <span className={styles.controlTitle}>
-            No account? <a className={styles.controlSign}>Sign up</a>
+            No account?{" "}
+            <a
+              className={styles.controlSign}
+              onClick={() => {
+                setFormType("register");
+                setIsOpen(true);
+              }}
+            >
+              Sign up
+            </a>
           </span>
         </div>
       </div>
