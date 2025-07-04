@@ -13,15 +13,15 @@ const ContentCategory = () => {
         <span className={style.categoryTitle}>Documentaries</span>
       </div>
       <div className={style.optionProfile}>
-        <img src={SearchIcon} alt=""/>
-        <img src={BellIcon} alt=""/>
+        <img src={SearchIcon} alt="" />
+        <img src={BellIcon} alt="" />
         <div className={style.profileIcon}>
-          <img src={EllipsisIcon} alt=""/>
+          <img src={EllipsisIcon} alt="" />
           <span className={style.profileName}>Nickname</span>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ContentCategory;

@@ -4,8 +4,22 @@
   display: flex;
   gap: 2rem;
 
-  .mainContent{
+  .layout {
     padding: 2rem 2rem 0 0;
+    display: flex;
     width: 100%;
+  }
+
+  .navigation {
+    width: 220px;
+    min-width: 180px;
+    position: relative; // или вообще не указывать
+    z-index: 2;
+  }
+
+  .contentCategory {
+    flex: 1;
+    overflow: auto;
+    // padding-left: 220px; // если вдруг навигация absolute, но лучше через flex
   }
 }
